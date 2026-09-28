@@ -3,50 +3,13 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="Molly Channon — interpretation, curatorial practice, exhibitions, and digital experiences.">
+<meta name="description" content="Molly Channon — curator and writer working across modern and contemporary art, material culture, and interdisciplinary exhibition-making.">
 <title>Molly Channon</title>
-<style>
-*{box-sizing:border-box}
-:root{--pad:clamp(20px,3.5vw,64px)}
-html{scroll-behavior:smooth}
-body{margin:0;background:#fff;color:#111;font-family:Arial,Helvetica,sans-serif;font-size:18px;line-height:1.12}
-a{color:inherit;text-decoration:none}
-.site-header{display:flex;justify-content:space-between;align-items:center;padding:30px var(--pad) 24px}
-.name{font-size:clamp(22px,2vw,32px)}
-nav{display:flex;gap:clamp(22px,4vw,72px);font-size:clamp(18px,1.8vw,29px)}
-nav a:hover,.project-title:hover,.contact a:hover{text-decoration:underline;text-underline-offset:.12em}
-.intro{padding:clamp(65px,9vw,150px) var(--pad) clamp(85px,11vw,180px)}
-.intro h1{font-size:clamp(38px,5.8vw,96px);line-height:.98;letter-spacing:-.055em;font-weight:400;max-width:1500px;margin:0}
-.work{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:clamp(70px,9vw,150px) clamp(24px,3vw,54px);padding:0 var(--pad) clamp(120px,14vw,220px)}
-.project-wide{grid-column:1/-1}
-.media{aspect-ratio:4/3;width:100%;overflow:hidden;background:#f3f3f3}
-.project-wide .media{aspect-ratio:16/8}
-.media img{width:100%;height:100%;object-fit:cover;display:block}
-.placeholder{display:flex;align-items:center;justify-content:center;border:1px solid #111;background:#fff}
-.placeholder span{font-size:14px;padding:20px;text-align:center}
-.project-title{display:flex;justify-content:space-between;gap:20px;margin-top:15px;font-size:clamp(27px,3vw,50px);letter-spacing:-.035em}
-.project p{font-size:clamp(16px,1.5vw,23px);margin:8px 0 0;max-width:800px}
-.year{white-space:nowrap}
-.text-section{display:grid;grid-template-columns:1fr 3fr;gap:30px;padding:30px var(--pad) clamp(100px,11vw,180px);border-top:1px solid #111}
-.section-label{font-size:clamp(22px,2.2vw,36px)}
-.section-copy{font-size:clamp(28px,3.5vw,58px);letter-spacing:-.04em;max-width:1200px}
-.section-copy p{margin:0 0 1em}
-.section-copy .small{font-size:18px;letter-spacing:0}
-footer{border-top:1px solid #111;padding:24px var(--pad) 45px;display:flex;justify-content:space-between}
-@media(max-width:760px){
-  .site-header{align-items:flex-start;gap:30px}
-  .site-header nav{display:grid;grid-template-columns:1fr 1fr;gap:8px 24px}
-  .work{grid-template-columns:1fr}
-  .project-wide{grid-column:auto}
-  .project-wide .media{aspect-ratio:4/3}
-  .text-section{grid-template-columns:1fr}
-  .section-copy{font-size:clamp(26px,8vw,42px)}
-}
-</style>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
 <header class="site-header">
-  <a class="name" href="#top">Molly Channon</a>
+  <a class="name" href="index.html">Molly Channon</a>
   <nav aria-label="Primary">
     <a href="#work">Work</a>
     <a href="#about">About</a>
@@ -54,78 +17,57 @@ footer{border-top:1px solid #111;padding:24px var(--pad) 45px;display:flex;justi
     <a href="#contact">Contact</a>
   </nav>
 </header>
-
 <main id="top">
   <section class="intro">
-    <h1>Molly Channon is a museum professional working across interpretation, curatorial practice, exhibitions, and digital experiences.</h1>
+    <h1>Molly Channon is a curator and writer working across modern and contemporary art, material culture, and interdisciplinary exhibition-making.</h1>
   </section>
-
   <section id="work" class="work">
     <article class="project project-wide">
-      <div class="media placeholder"><span>Add Material Matters image</span></div>
-      <a class="project-title" href="#"><span>→ Material Matters</span><span class="year">2026</span></a>
-      <p>Co-curation, interpretive strategy, exhibition development</p>
+      <a href="material-matters.html"><div class="media"><img src="material-matters-home.jpg" alt="Installation view of Material Matters: How Synthetics Shaped an Era at The Wolfsonian–FIU"></div></a>
+      <a class="project-title" href="material-matters.html"><span>→ Material Matters</span><span class="year">2026</span></a>
+      <p>Co-curator · The Wolfsonian–FIU</p>
     </article>
-
     <article class="project">
-      <div class="media placeholder"><span>Add Bloomberg Connects image</span></div>
-      <a class="project-title" href="#"><span>→ Bloomberg Connects</span><span class="year">2025–</span></a>
-      <p>Digital interpretation, audio, editorial strategy</p>
+      <a href="flex-and-flux.html"><div class="media"><img src="flex-and-flux-home.jpg" alt="Installation view of Flex &amp; Flux at Collective 62 in Miami"></div></a>
+      <a class="project-title" href="flex-and-flux.html"><span>→ Flex &amp; Flux</span><span class="year">2025–26</span></a>
+      <p>Co-curator · Collective 62 · Miami</p>
     </article>
-
     <article class="project">
-      <div class="media placeholder"><span>Add Foot Notes image</span></div>
-      <a class="project-title" href="#"><span>→ Foot Notes</span><span class="year">2026</span></a>
-      <p>Exhibition interpretation, audio storytelling</p>
+      <a href="serious-sparkle.html"><div class="media"><img src="serious-sparkle-home.jpg" alt="Installation view of Serious Sparkle at the Tang Teaching Museum"></div></a>
+      <a class="project-title" href="serious-sparkle.html"><span>→ Serious Sparkle</span><span class="year">2019–20</span></a>
+      <p>Curator · Tang Teaching Museum</p>
     </article>
-
     <article class="project">
-      <div class="media placeholder"><span>Add Serious Sparkle image</span></div>
-      <a class="project-title" href="#"><span>→ Serious Sparkle</span><span class="year">2019–20</span></a>
-      <p>Curatorial</p>
+      <a href="david-mancuso-the-loft.html"><div class="media"><img src="david-mancuso-the-loft-home.jpg" alt="Installation view of David Mancuso–The Loft in the Tang Teaching Museum elevator"></div></a>
+      <a class="project-title" href="david-mancuso-the-loft.html"><span>→ David Mancuso–The Loft</span><span class="year">2018–19</span></a>
+      <p>Curator · Tang Teaching Museum</p>
     </article>
-
     <article class="project">
-      <div class="media placeholder"><span>Add David Mancuso—The Loft image</span></div>
-      <a class="project-title" href="#"><span>→ David Mancuso—The Loft</span><span class="year">2019</span></a>
-      <p>Curatorial</p>
+      <a href="along-the-border.html"><div class="media"><img src="along-the-border-home.jpg" alt="Installation view of Along the Border at the Tang Teaching Museum"></div></a>
+      <a class="project-title" href="along-the-border.html"><span>→ Along the Border</span><span class="year">2018</span></a>
+      <p>Co-curator · Tang Teaching Museum</p>
     </article>
-
     <article class="project project-wide">
-      <div class="media placeholder"><span>Add Along the Border image</span></div>
-      <a class="project-title" href="#"><span>→ Along the Border</span><span class="year">2018</span></a>
-      <p>Curatorial</p>
+      <a href="hashem-is-here.html"><div class="media"><img src="hashem-is-here-home.jpg" alt="Installation view of Hashem is Here at the Joseph Slifka Center for Jewish Life at Yale"></div></a>
+      <a class="project-title" href="hashem-is-here.html"><span>→ Hashem is Here</span><span class="year">2017</span></a>
+      <p>Co-curator · Joseph Slifka Center for Jewish Life at Yale University</p>
     </article>
   </section>
-
   <section id="about" class="text-section">
     <div class="section-label">About</div>
     <div class="section-copy">
-      <p>Molly Channon is an interpretation specialist, curator, writer, and researcher based in Miami Beach. At The Wolfsonian–FIU, she develops interpretive strategies and exhibition content across gallery, audio, and digital platforms.</p>
-      <p>Previously, she was Curatorial Assistant at the Frances Young Tang Teaching Museum and Art Gallery at Skidmore College. She holds an MA in religion and the arts from Yale University and the Yale Institute of Sacred Music and a BA in art history and philosophy from Brandeis University.</p>
+      <p>Molly Channon is a curator and writer based in Miami Beach. Her curatorial practice spans modern and contemporary art, material culture, and interdisciplinary exhibition-making.</p>
+      <p>Her broader museum work includes interpretation, digital experiences, publications, audience engagement, and collaborative exhibition development.</p>
     </div>
   </section>
-
   <section id="cv" class="text-section">
     <div class="section-label">CV</div>
-    <div class="section-copy">
-      <p><strong>The Wolfsonian–FIU</strong><br>Interpretation Specialist, 2024–present<br>Student + Academic Engagement Coordinator, 2023–24</p>
-      <p><strong>Frances Young Tang Teaching Museum and Art Gallery</strong><br>Curatorial Assistant, 2017–21</p>
-      <p class="small">Replace this short version with a PDF link or expanded CV when ready.</p>
-    </div>
+    <div class="section-copy"><p>Selected exhibitions, publications, talks, and museum experience.</p><p class="small">PDF link coming next.</p></div>
   </section>
-
   <section id="contact" class="text-section contact">
     <div class="section-label">Contact</div>
-    <div class="section-copy">
-      <p><a href="mailto:YOUR-EMAIL-HERE">Email ↗</a><br><a href="#">LinkedIn ↗</a></p>
-    </div>
+    <div class="section-copy"><p><a href="mailto:ma.channon@gmail.com">ma.channon@gmail.com ↗</a></p></div>
   </section>
 </main>
-
-<footer>
-  <span>© 2026 Molly Channon</span>
-  <a href="#top">Back to top ↑</a>
-</footer>
-</body>
-</html>
+<footer><span>© 2026 Molly Channon</span><a href="#top">Back to top ↑</a></footer>
+</body></html>
