@@ -11,16 +11,22 @@
 .site-header nav .instagram-link { display: inline-flex; align-items: center; justify-content: center; flex: 0 0 auto; min-width: 32px; min-height: 32px; color: #111; }
 .site-header nav .instagram-link svg { display: block; }
 .site-header nav .instagram-link:focus-visible { outline: 2px solid currentColor; outline-offset: 3px; }
-#projects.projects { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 56px 36px; align-items: start; }
-#projects > .project { display: block; position: static; grid-column: auto; grid-row: auto; width: auto; min-width: 0; max-width: none; margin: 0; padding: 0; }
-#projects > .project > a:first-child { display: block; }
+#projects.projects { display: block; margin-bottom: 0; padding-bottom: 80px; }
+#projects #projects-heading { font-size: 1rem; font-weight: 400; line-height: 1.5; margin: 0 0 28px; }
+#projects .project-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 56px 36px; align-items: start; }
+#projects .project-grid > .project { display: block; position: static; grid-column: auto; grid-row: auto; width: auto; min-width: 0; max-width: none; margin: 0; padding: 0; }
+#projects .project > a:first-child { display: block; }
 #projects .media { position: relative; display: block; width: 100%; height: auto; min-height: 0; max-height: none; aspect-ratio: 4 / 3; margin: 0; padding: 0; overflow: hidden; }
 #projects .media img { position: static; display: block; width: 100%; height: 100%; max-height: none; object-fit: cover; }
-#projects .project-title { position: static; display: flex; align-items: baseline; justify-content: space-between; gap: 12px; margin: 14px 0 0; line-height: 1.4; }
-#projects .project-title > span:first-child { min-width: 0; }
-#projects .project-title .year { flex: 0 0 auto; white-space: nowrap; }
-#projects .project > p { position: static; margin: 6px 0 0; line-height: 1.5; }
-@media (max-width: 640px) { #projects.projects { grid-template-columns: minmax(0, 1fr); gap: 36px; } }
+#projects .project-title { position: static; display: flex; align-items: baseline; justify-content: space-between; gap: 12px; margin: 14px 0 0; line-height: 1.4; text-decoration: none !important; border-bottom: 0; }
+#projects .project-name { min-width: 0; color: inherit; text-decoration: none; border-bottom: 0; }
+#projects .project-name:hover, #projects .project-name:focus-visible { text-decoration: underline; text-underline-offset: .2em; }
+#projects .project-title .year { flex: 0 0 auto; white-space: nowrap; text-decoration: none !important; border-bottom: 0; }
+#about.text-section { margin-top: 0; padding-top: 32px; }
+@media (max-width: 640px) {
+  #projects .project-grid { grid-template-columns: minmax(0, 1fr); gap: 36px; }
+  #projects.projects { padding-bottom: 56px; }
+}
 </style>
 </head>
 <body>
@@ -40,37 +46,34 @@
   <section class="intro">
     <h1>Molly Channon is a curator and writer working across modern and contemporary art, material culture, and interdisciplinary exhibition-making.</h1>
   </section>
-  <section id="projects" class="projects">
+  <section id="projects" class="projects" aria-labelledby="projects-heading">
+    <h2 id="projects-heading" class="section-label">Projects</h2>
+    <div class="project-grid">
     <article class="project">
       <a href="material-matters.html"><div class="media"><img src="material-matters-home.jpg" alt="Installation view of Material Matters: How Synthetics Shaped an Era at The Wolfsonian–FIU"></div></a>
-      <a class="project-title" href="material-matters.html"><span>→ Material Matters</span><span class="year">2026</span></a>
-      <p>The Wolfsonian–FIU</p>
+      <div class="project-title"><a class="project-name" href="material-matters.html">Material Matters</a><span class="year">2026</span></div>
     </article>
     <article class="project">
       <a href="flex-and-flux.html"><div class="media"><img src="flex-and-flux-home.jpg" alt="Installation view of Flex &amp; Flux at Collective 62 in Miami"></div></a>
-      <a class="project-title" href="flex-and-flux.html"><span>→ Flex &amp; Flux</span><span class="year">2025–26</span></a>
-      <p>Collective 62 · Miami</p>
+      <div class="project-title"><a class="project-name" href="flex-and-flux.html">Flex &amp; Flux</a><span class="year">2025–26</span></div>
     </article>
     <article class="project">
       <a href="serious-sparkle.html"><div class="media"><img src="serious-sparkle-home.jpg" alt="Installation view of Serious Sparkle at the Tang Teaching Museum"></div></a>
-      <a class="project-title" href="serious-sparkle.html"><span>→ Serious Sparkle</span><span class="year">2019–20</span></a>
-      <p>Tang Teaching Museum</p>
+      <div class="project-title"><a class="project-name" href="serious-sparkle.html">Serious Sparkle</a><span class="year">2019–20</span></div>
     </article>
     <article class="project">
       <a href="david-mancuso-the-loft.html"><div class="media"><img src="david-mancuso-the-loft-home.jpg" alt="Installation view of David Mancuso–The Loft in the Tang Teaching Museum elevator"></div></a>
-      <a class="project-title" href="david-mancuso-the-loft.html"><span>→ David Mancuso–The Loft</span><span class="year">2018–19</span></a>
-      <p>Tang Teaching Museum</p>
+      <div class="project-title"><a class="project-name" href="david-mancuso-the-loft.html">David Mancuso–The Loft</a><span class="year">2018–19</span></div>
     </article>
     <article class="project">
       <a href="along-the-border.html"><div class="media"><img src="along-the-border-home.jpg" alt="Installation view of Along the Border at the Tang Teaching Museum"></div></a>
-      <a class="project-title" href="along-the-border.html"><span>→ Along the Border</span><span class="year">2018</span></a>
-      <p>Tang Teaching Museum</p>
+      <div class="project-title"><a class="project-name" href="along-the-border.html">Along the Border</a><span class="year">2018</span></div>
     </article>
     <article class="project">
       <a href="hashem-is-here.html"><div class="media"><img src="hashem-is-here-home.jpg" alt="Installation view of Hashem is Here at the Joseph Slifka Center for Jewish Life at Yale"></div></a>
-      <a class="project-title" href="hashem-is-here.html"><span>→ Hashem is Here</span><span class="year">2017</span></a>
-      <p>Joseph Slifka Center for Jewish Life at Yale University</p>
+      <div class="project-title"><a class="project-name" href="hashem-is-here.html">Hashem is Here</a><span class="year">2017</span></div>
     </article>
+    </div>
   </section>
   <section id="about" class="text-section">
     <div class="section-label">About</div>
@@ -81,7 +84,7 @@
   </section>
   <section id="cv" class="text-section">
     <div class="section-label">CV</div>
-    <div class="section-copy"><p>Selected exhibitions, publications, talks, and experience.</p><p><a href="channon-cv-2026.pdf">View CV (PDF) ↗</a></p></div>
+    <div class="section-copy"><p>Selected exhibitions, publications, talks, and museum experience.</p><p><a href="Channon_CV_2026.pdf">View CV (PDF) ↗</a></p></div>
   </section>
 </main>
 <footer><span>© 2026 Molly Channon</span><a href="#top">Back to top ↑</a></footer>
