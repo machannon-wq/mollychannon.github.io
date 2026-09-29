@@ -12,7 +12,6 @@
 .site-header nav .instagram-link svg { display: block; }
 .site-header nav .instagram-link:focus-visible { outline: 2px solid currentColor; outline-offset: 3px; }
 #projects.projects { display: block; margin-bottom: 0; padding-bottom: 80px; }
-#projects #projects-heading { font-size: 1rem; font-weight: 400; line-height: 1.5; margin: 0 0 28px; }
 #projects .project-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 56px 36px; align-items: start; }
 #projects .project-grid > .project { display: block; position: static; grid-column: auto; grid-row: auto; width: auto; min-width: 0; max-width: none; margin: 0; padding: 0; }
 #projects .project > a:first-child { display: block; }
@@ -26,6 +25,15 @@
 @media (max-width: 640px) {
   #projects .project-grid { grid-template-columns: minmax(0, 1fr); gap: 36px; }
   #projects.projects { padding-bottom: 56px; }
+}
+
+#about .about-content { display: grid; grid-template-columns: minmax(0, 1fr) 200px; gap: 32px; align-items: start; min-width: 0; }
+#about .about-bio { min-width: 0; }
+#about .about-bio p:first-child { margin-top: 0; }
+#about .about-portrait { display: block; position: static; width: 200px; max-width: 100%; height: auto; margin: 0; border: 0; border-radius: 0; }
+@media (max-width: 900px) {
+  #about .about-content { grid-template-columns: minmax(0, 1fr); gap: 24px; }
+  #about .about-portrait { grid-row: 1; width: 160px; }
 }
 </style>
 </head>
@@ -47,7 +55,9 @@
     <h1>Molly Channon is a curator and writer working across modern and contemporary art, material culture, and interdisciplinary exhibition-making.</h1>
   </section>
   <section id="projects" class="projects" aria-labelledby="projects-heading">
-    <h2 id="projects-heading" class="section-label">Projects</h2>
+    <header class="text-section projects-heading-row">
+      <div id="projects-heading" class="section-label">Projects</div>
+    </header>
     <div class="project-grid">
     <article class="project">
       <a href="material-matters.html"><div class="media"><img src="material-matters-home.jpg" alt="Installation view of Material Matters: How Synthetics Shaped an Era at The Wolfsonian–FIU"></div></a>
@@ -77,9 +87,12 @@
   </section>
   <section id="about" class="text-section">
     <div class="section-label">About</div>
-    <div class="section-copy">
-      <p>Molly Channon is a curator and writer based in Miami Beach. Her curatorial practice spans modern and contemporary art, material culture, and interdisciplinary exhibition-making.</p>
-      <p>Her broader museum work includes interpretation, digital experiences, publications, audience engagement, and collaborative exhibition development.</p>
+    <div class="section-copy about-content">
+      <div class="about-bio">
+        <p>Molly Channon is a curator and writer based in Miami Beach. Her curatorial practice spans modern and contemporary art, material culture, and interdisciplinary exhibition-making.</p>
+        <p>Her broader museum work includes interpretation, digital experiences, publications, audience engagement, and collaborative exhibition development.</p>
+      </div>
+      <img class="about-portrait" src="Molly_Channon.jpg" alt="Molly Channon" width="1411" height="1356" loading="lazy" decoding="async">
     </div>
   </section>
   <section id="cv" class="text-section">
