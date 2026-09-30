@@ -12,6 +12,8 @@
 .site-header nav .instagram-link svg { display: block; }
 .site-header nav .instagram-link:focus-visible { outline: 2px solid currentColor; outline-offset: 3px; }
 #projects.projects { display: block; margin-bottom: 0; padding-bottom: 80px; }
+#projects .projects-heading-row { margin-bottom: 18px; padding-bottom: 0; }
+.section-label { font-size: clamp(1.65rem, 2.5vw, 2.2rem); line-height: 1.1; font-weight: 700; }
 #projects .project-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 56px 36px; align-items: start; }
 #projects .project-grid > .project { display: block; position: static; grid-column: auto; grid-row: auto; width: auto; min-width: 0; max-width: none; margin: 0; padding: 0; }
 #projects .project > a:first-child { display: block; }
@@ -27,13 +29,14 @@
   #projects.projects { padding-bottom: 56px; }
 }
 
-#about .about-content { display: grid; grid-template-columns: minmax(0, 1fr) 200px; gap: 32px; align-items: start; min-width: 0; }
+#about .about-content { display: block; min-width: 0; }
 #about .about-bio { min-width: 0; }
 #about .about-bio p:first-child { margin-top: 0; }
-#about .about-portrait { display: block; position: static; width: 200px; max-width: 100%; height: auto; margin: 0; border: 0; border-radius: 0; }
+#about .about-portrait { display: block; position: static; width: 200px; max-width: 100%; height: auto; margin: 0 0 24px; border: 0; border-radius: 0; }
+.cv-link { display: inline-flex; align-items: center; gap: 0.35em; }
+.cv-link svg { width: 0.9em; height: 0.9em; flex: 0 0 auto; stroke: currentColor; }
 @media (max-width: 900px) {
-  #about .about-content { grid-template-columns: minmax(0, 1fr); gap: 24px; }
-  #about .about-portrait { grid-row: 1; width: 160px; }
+  #about .about-portrait { width: 160px; margin-bottom: 20px; }
 }
 </style>
 </head>
@@ -88,16 +91,16 @@
   <section id="about" class="text-section">
     <div class="section-label">About</div>
     <div class="section-copy about-content">
+      <img class="about-portrait" src="Molly_Channon.jpg" alt="Molly Channon" width="1411" height="1356" loading="lazy" decoding="async">
       <div class="about-bio">
         <p>Molly Channon is a curator and writer based in Miami Beach. Her curatorial practice spans modern and contemporary art, material culture, and interdisciplinary exhibition-making.</p>
-        <p>Her broader museum work includes interpretation, digital experiences, publications, audience engagement, and collaborative exhibition development.</p>
+        <p>Her broader museum work includes interpretation, digital experiences, publications, audience engagement, and academic engagement across college and university communities.</p>
       </div>
-      <img class="about-portrait" src="Molly_Channon.jpg" alt="Molly Channon" width="1411" height="1356" loading="lazy" decoding="async">
     </div>
   </section>
   <section id="cv" class="text-section">
     <div class="section-label">CV</div>
-    <div class="section-copy"><p>Selected exhibitions, publications, talks, and museum experience.</p><p><a href="channon-cv-2026.pdf">View CV (PDF) ↗</a></p></div>
+    <div class="section-copy"><p>Selected exhibitions, publications, talks, and museum experience.</p><p><a class="cv-link" href="channon-cv-2026.pdf">View CV (PDF)<svg viewBox="0 0 24 24" fill="none" aria-hidden="true" focusable="false"><path d="M7 17L17 7M9 7h8v8" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></a></p></div>
   </section>
 </main>
 <footer><span>© 2026 Molly Channon</span><a href="#top">Back to top ↑</a></footer>
