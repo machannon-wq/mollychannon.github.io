@@ -1,7 +1,74 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Flex &amp; Flux — Molly Channon</title><link rel="stylesheet" href="style.css"></head><body>
-<header class="site-header"><a class="name" href="index.html">Molly Channon</a><nav><a href="index.html#work">Work</a><a href="index.html#about">About</a><a href="index.html#cv">CV</a><a href="index.html#contact">Contact</a></nav></header>
-<main><section class="project-hero"><h1>Flex &amp; Flux</h1><div class="project-meta"><p>Co-curator</p><p>Collective 62 · Miami</p><p>2025–26</p></div></section><section class="gallery"><div class="wide"><img src="flex-and-flux-home.jpg" alt="Selected installation view from Flex &amp; Flux"></div>
-<div class=""><img src="flex-and-flux-02.jpg" alt="Selected installation view from Flex &amp; Flux"></div>
-</section></main>
-<div class="project-note"><span>Selected installation views</span><a class="back" href="index.html#work">Back to Work →</a></div>
-<footer><span>© 2026 Molly Channon</span><a href="index.html">Molly Channon</a></footer></body></html>
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Flex &amp; Flux — Molly Channon</title>
+<link rel="stylesheet" href="style.css">
+
+<style>
+.project-page { max-width: 1180px; margin: 0 auto; padding: 34px 24px 90px; }
+.project-banner { margin: 0 0 30px; }
+.project-banner img { display: block; width: 100%; height: auto; max-height: 78vh; object-fit: cover; }
+.project-info { max-width: 850px; margin: 0 0 54px; }
+.project-info h1 { margin: 0 0 10px; font-size: clamp(2rem, 4.6vw, 4rem); line-height: 1.02; font-weight: 500; letter-spacing: -0.025em; }
+.project-details { margin: 0 0 30px; }
+.project-details p { margin: 2px 0; }
+.project-description p { margin: 0 0 1.1em; }
+.project-credit { margin-top: 26px; }
+.project-list-heading { margin: 24px 0 8px; font-weight: 600; }
+.project-artist-list { margin: 0; padding: 0; list-style: none; }
+.installation-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 22px; margin-top: 40px; }
+.installation-grid figure { margin: 0; }
+.installation-grid img { display: block; width: 100%; height: 100%; min-height: 0; aspect-ratio: 4 / 3; object-fit: cover; }
+.installation-grid .full-width { grid-column: 1 / -1; }
+.installation-grid .full-width img { aspect-ratio: auto; height: auto; }
+.project-bottom { max-width: 1180px; margin: 0 auto; padding: 0 24px 36px; display: flex; justify-content: flex-end; }
+.project-bottom a { color: inherit; }
+@media (max-width: 700px) {
+  .project-page { padding: 20px 18px 60px; }
+  .project-banner { margin-bottom: 22px; }
+  .project-info { margin-bottom: 38px; }
+  .installation-grid { grid-template-columns: 1fr; gap: 16px; }
+  .installation-grid .full-width { grid-column: auto; }
+  .installation-grid img { aspect-ratio: auto; height: auto; }
+  .project-bottom { padding: 0 18px 28px; }
+}
+</style>
+
+</head>
+<body>
+<header class="site-header">
+<a class="name" href="index.html">Molly Channon</a>
+<nav aria-label="Primary">
+<a href="index.html#projects">Projects</a>
+<a href="index.html#about">About</a>
+<a href="index.html#cv">CV</a>
+<a href="contact.html">Contact</a>
+</nav>
+</header>
+<main class="project-page">
+<section class="project-banner">
+<img src="flex-and-flux-home.jpg" alt="Installation view of Flex &amp; Flux at Collective 62 in Miami">
+</section>
+<section class="project-info">
+<h1>Flex &amp; Flux</h1>
+<div class="project-details">
+<p>Collective 62 • Miami, FL</p>
+<p>November 30, 2025–January 8, 2026</p>
+</div>
+<div class="project-description">
+
+<p><em>Flex &amp; Flux</em> brings together artists whose works explore language as visual, tactile, and conceptual material. In conversation with images, materials, and environments, words shift in meaning and form, shaped by context and individual experience. At times, language gives voice to memory, identity, or personal reflection; elsewhere, words themselves become the subject—questioning, provoking, or operating simply as form. Across these shifting modes, the exhibition considers how language functions both as a carrier of meaning and as an image in itself: embodied, mutable, and alive.</p>
+<p>Presented alongside the exhibition, <em>Multiples Matter: Artist Editions &amp; Iterations</em> extended these ideas through a pop-up shop featuring editioned and small-format works by participating artists. Drawing on the history of artist multiples from Dada onward, the project foregrounded accessibility, circulation, and repetition, considering how artworks can move beyond singular objects and into broader public exchange.</p>
+
+</div>
+<p class="project-credit">Curated in dialogue with Laura Marsh</p>
+<div class="project-list-heading">Works by:</div><ul class="project-artist-list"><li>Marianna Angel</li><li>Bel Falleiros and Renata Cruz</li><li>Brooke Frank</li><li>Katelyn Kopenhaver</li><li>Marcela Marcuzzi</li><li>Laura Marsh</li><li>Daniel Marosi</li><li>Genesis Moreno</li><li>Kristina Reinis</li><li>Nicholas J. Waguespack</li><li>Jill Weisberg</li><li>Chantae E. Wright</li><li>Ricardo E. Zulueta</li></ul>
+</section>
+<section class="installation-grid" aria-label="Selected installation views"><figure class="full-width"><img src="flex-and-flux-02.jpg" alt="Installation view of Flex &amp; Flux" loading="lazy" decoding="async"></figure></section>
+</main>
+<div class="project-bottom"><a href="index.html#projects">Back to Projects →</a></div>
+<footer><span>© 2026 Molly Channon</span><a href="index.html">Molly Channon</a></footer>
+</body>
+</html>
